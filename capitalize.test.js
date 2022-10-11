@@ -1,9 +1,7 @@
 import capitalize from '../code.test/capitalize.js'
-
-if (capitalize('hello') !== 'hello') {
-    throw new Error('Функция работает неверно!');
-  }
-
+import { strict as assert } from 'assert';
+assert.equal(capitalize('text'), 'text');
+console.log('Всё ок')
   
-  console.log('Все тесты пройдены!');
+  
   
